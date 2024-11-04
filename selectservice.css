@@ -1,0 +1,111 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url('images/barber.jpg');
+  background-size: 1; /* Adjust to cover */
+  background-position: center;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start; /* Align content to start */
+  align-items: flex-start; /* Align items to the top */
+  background-color: #000;
+  position: relative;
+}
+
+.container {
+  display: flex;
+  flex-direction: column; /* Stack navbar on top of content */
+  width: 100%;
+}
+
+.navbar {
+  width: 99%; /* Full width for the top navbar */
+  background-color: rgba(244, 244, 244, 0.8);
+  padding: 1px 5px; /* Padding around navbar items */
+  display: flex;
+  justify-content: space-between; /* Space between logo and menu items */
+  align-items: center; /* Center items vertically */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo-img {
+  height: 50px; /* Adjust height as needed */
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Horizontal layout for menu items */
+}
+
+.navbar li {
+  margin: 0 15px; /* Space between navbar items */
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #007BFF;
+  font-weight: bold;
+  display: block; /* Makes the whole area clickable */
+  padding: 10px; /* Space around links */
+}
+
+.navbar a:hover {
+  background-color: #f0f0f0; /* Add hover effect */
+}
+
+.main-content {
+  flex-grow: 1; /* Allow the main content to grow */
+  padding: 20px; /* Padding around main content */
+}
+
+#servicesContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.outer-box {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 90px; /* Reduced padding for smaller boxes */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  flex: 1 0 100px; /* Adjusted minimum width */
+}
+
+.inners-box {
+  margin-top: 10px;
+}
+
+.inner-box {
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end; /* Aligns button to the right */
+}
+
+button {
+  padding: 20px 30px; /* Smaller button padding */
+  font-size: 14px; /* Smaller font size */
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #007BFF;
+  color: white;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Optional: style the submit button */
+button[type="submit"] {
+  background-color: #28a745;
+}
+
+button[type="submit"]:hover {
+  background-color: #218838;
+}

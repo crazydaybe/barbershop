@@ -1,0 +1,174 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('images/contact.jpg'); /* Replace with your image URL */
+    background-size: 100%; /* Ensures the image covers the entire area */
+    background-position: center; /* Center the image */
+    margin: 0;
+    padding: 0;
+    color: #444;
+    text-align: center;
+}
+
+.navbar {
+    background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent background */
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+#logout-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background-color: #dc3545;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#logout-btn:hover {
+    background-color: #c82333;
+}
+
+#update-profile-btn {
+    position: absolute;
+    top: 10px;
+    right: 120px;
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#update-profile-btn:hover {
+    background-color: #218838;
+}
+
+.contact {
+    background-color: rgba(244, 244, 244, 0.8); /* Semi-transparent background for readability */
+    text-align: center;
+    padding: 10px 20px;
+    width: 70%; /* Set a width */
+    margin: 0 auto; /* Center the hero section */
+}
+
+.contact h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+.contact p {
+    font-size: 18px;
+    color: #555;
+}
+
+.btn.get-started {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.btn.get-started:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+.content {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 32px;
+    color: #333;
+}
+
+.service-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.service-item {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-item h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.service-item p {
+    font-size: 16px;
+    color: #555;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 768px) {
+    .service-list {
+        grid-template-columns: 1fr;
+    }
+    .navbar {
+        flex-direction: column;
+    }
+    .hero h1 {
+        font-size: 28px;
+    }
+    .hero p {
+        font-size: 16px;
+    }
+    .btn.get-started, #update-profile-btn, #logout-btn {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}

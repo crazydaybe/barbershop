@@ -1,0 +1,2 @@
+UPDATE services
+SET count = 0;

@@ -1,0 +1,91 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('images/register.jpg'); /* Replace with your image URL */
+    background-size: 1; /* Updated to cover */
+    background-position: center;
+    margin: 0;
+    padding: 20px;
+    color: #444;
+    text-align: center;
+    display: flex; /* Centering content */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-container {
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+    width: 400px;
+    text-align: center;
+}
+
+h2 {
+    color:  hsl(36, 66%, 53%);
+    margin-bottom: 20px; /* Added spacing below the header */
+}
+
+input[type="text"], 
+input[type="password"], 
+input[type="email"], 
+input[type="date"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease; /* Transition for border color */
+}
+
+input[type="text"]:focus, 
+input[type="password"]:focus, 
+input[type="email"]:focus, 
+input[type="date"]:focus,
+select:focus {
+    border-color: hsl(36, 66%, 53%); /* Highlight border on focus */
+    outline: none; /* Remove default outline */
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: hsl(36, 66%, 53%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transition for background color */
+}
+
+input[type="submit"]:hover {
+    background-color:  hsl(36, 61%, 58%); /* Darker shade on hover */
+}
+
+.error {
+    color: red;
+    font-size: 0.9em;
+    margin-top: -8px; /* Adjusted positioning */
+}
+
+.success {
+    color: green;
+    font-size: 1.1em;
+    margin-bottom: 10px; /* Added spacing below success message */
+}
+
+.login-link {
+    margin-top: 20px;
+    display: inline-block;
+    color: hsl(36, 66%, 53%);
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease; /* Transition for color change */
+}
+
+.login-link:hover {
+    text-decoration: underline;
+    color:  hsl(36, 61%, 58%); /* Darker shade on hover */
+}

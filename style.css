@@ -1,0 +1,92 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('images/register.jpg'); /* Replace with your image URL */
+    background-size: 1; /* Updated to cover */
+    background-position: center;
+    margin: 0;
+    padding: 20px;
+    color: #444;
+    text-align: center;
+    display: flex; /* Centering content */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+#form {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+#form h1 {
+    margin-bottom: 20px;
+    color: hsl(36, 66%, 53%);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus {
+    border-color:  hsl(36, 61%, 58%);
+    outline: none;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: hsl(36, 61%, 58%);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color:  hsl(36, 66%, 53%);
+}
+
+#create-account-btn {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+#create-account-btn:hover {
+    background-color: #218838;
+}
+
+@media screen and (max-width: 570px) {
+    #form {
+        width: 65%;
+        margin-left: none;
+        padding: 40px;
+    }
+}
